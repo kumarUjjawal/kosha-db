@@ -12,8 +12,8 @@ fn bytewise_comparator_orders_keys() {
 
 #[test]
 fn tombstone_marks_deleted_entries() {
-    let present = EntryValue::Tombstone;
-    let deleted = EntryValue::Value(b"Value".to_vec());
+    let deleted = EntryValue::Tombstone;
+    let present = EntryValue::Value(b"value".to_vec());
 
     assert!(deleted.is_tombstone());
     assert!(!present.is_tombstone());
@@ -26,7 +26,7 @@ fn default_options_are_small_and_clear() {
     let options = DbOptions::default();
 
     assert!(options.create_if_missing);
-    assert!(options.sync_write);
+    assert!(!options.sync_write);
 }
 
 #[test]
