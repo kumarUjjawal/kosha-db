@@ -1,14 +1,7 @@
-pub fn add(left: u64, right: u64) -> u64 {
-    left + right
-}
+pub mod common;
+pub mod db;
 
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
-}
+pub use common::comparator::{BytewiseComparator, Comparator};
+pub use common::types::{EntryValue, Key, Value};
+pub use db::errors::{DbError, Result};
+pub use db::options::DbOptions;
