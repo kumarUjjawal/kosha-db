@@ -1,5 +1,6 @@
 pub mod common;
 pub mod db;
+pub mod memtable;
 
 pub use common::comparator::{BytewiseComparator, Comparator};
 pub use common::types::{EntryValue, Key, Value};
