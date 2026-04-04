@@ -1,4 +1,4 @@
-use kosha_db::{BytewiseComparator, Comparator, DbError, DbOptions, EntryValue};
+use koshadb::{BytewiseComparator, Comparator, DbError, DbOptions, EntryValue};
 use std::cmp::Ordering;
 
 #[test]

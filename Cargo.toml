@@ -1,5 +1,5 @@
 [package]
-name = "kosha-db"
+name = "koshadb"
 version = "0.1.0"
 edition = "2024"
 
