@@ -1,5 +1,3 @@
-use std::iter::Skip;
-
 use koshadb::{EntryValue, MemTable, SkipListMemTable};
 
 #[test]
